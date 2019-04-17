@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--背景-->
+<!--
+<div id="fps"></div>
+<div id="bg_glow"></div>
+<div id="overlay"></div>
+<canvas id="canvas"></canvas>
+-->
+<!--头部-->
+<div class="box">
+<header>
+    <div class="container">
+        <h3 class="left">Extreme音乐播放器</h3>
+        <p class="right">by-Mr.Sun</p>
+    </div>
+</header>
+
+   <!-- 主体部分-->
+    <section>
+        <div class="container">
+            <input  type="text" class="search">
+            <ul class="searchUl">
+                <li>
+                    <span class=" left song"></span>
+                    <span class=" right singer"></span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--控制条-->
+    <footer>
+        <div class="container">
+           <!-- 按键-->
+            <div class="left btns">
+             <div class="left prev"></div>
+            <div class="left start"></div>
+            <div class="left next"></div>
+        </div>
+            <!--进度条-->
+            <div class=" left bars">
+                <div class=" left logo">
+                    <img src="img/tyu.jpg" alt="">
+                </div>
+                <div class=" left ctrl-bars-box">
+                    <p>
+                        <span></span>
+                    </p>
+                <div class="left ctrl-bars">
+                    <div class=" nobars"></div>
+                    <div class=" ctrl-btn">
+                     <div class=" ctrl-btn-small"></div>
+                    </div>
+                </div>
+                <div class="left tims">
+                    <span class="nowTime">00:00</span>
+                    <span class="totalTime">00:00</span>
+                </div>
+                </div>
+            </div>
+            <!--音量模式-->
+            <div class=" left modes">
+                <div class="left voice"></div>
+                <div class="left mode"></div>
+                <div class="left play-list"></div>
+            </div>
+        </div>
+        <div class="play-list-box">
+          <div class="list-header">
+              播放列表
+          </div>
+            <ul></ul>
+        </div>
+    </footer>
+</div>
+<div class="mask"></div>
+<div class="info">播放列表</div>
+<audio></audio>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.js"></script>
+<!--<script src="js/bg.js"></script>-->
+<script src="js/index.js"></script>
+<script>
+
+var play_list_box = document.querySelector('.play-list-box');
+var play_list = document.querySelector('.play-list');
+var index = 1;
+
+play_list.addEventListener('click',function () {
+    if(index == 1){
+        play_list_box.style.display = 'block';
+        index=2;
+    }else if(index == 2){
+        play_list_box.style.display = 'none';
+        index=1;
+    }
+
+
+})
+
+
+</script>
+</html>

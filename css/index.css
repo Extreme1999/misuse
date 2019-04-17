@@ -1,0 +1,343 @@
+/*清楚默认样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.box{
+    width: 100%;
+   position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+}
+/*头部*/
+header{
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #9a9a9a;
+}
+
+/*头部结束*/
+
+/*主体开始*/
+section .search{
+    width: 300px;
+    height: 30px;
+    display: block;
+    border-radius: 6px;
+    outline: none;
+    text-indent: 10px;
+    border: 1px solid #4fff00;
+    margin: 50px auto;
+}
+
+section ul{
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    background-color: #9a9a9a;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+section ul li{
+    height: 25px;
+    line-height: 25px;
+    padding: 5px 10px;
+    color: #000000;
+    font-size: 13px;
+    cursor: pointer;
+    opacity: 1;
+    border-bottom: 1px dashed #bdbdbd;
+}
+section ul li:hover{
+    color: #93f03c;
+}
+/*主体结束*/
+
+/*控制条开始*/
+footer{
+    width: 100%;
+    height: 52px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background:url("../img/1.png");
+}
+footer .btns{
+    height: 52px;
+    display: flex;
+    align-items: center;
+}
+footer .btns .prev{
+     width: 28px;
+     height: 28px;
+     background:url("../img/1.png") 0px -130px;
+ }
+footer .btns .prev:hover{
+    background-position-x:-30px;
+}
+footer .btns .start{
+    width: 36px;
+    height: 36px;
+    margin: 0 5px;
+    background:url("../img/1.png")0px -204px;
+}
+footer .btns .start:hover{
+    background-position-x:-40px ;
+}
+footer .btns .next{
+     width: 28px;
+     height: 28px;
+     background:url("../img/1.png")-80px -130px;
+ }
+footer .btns .next:hover{
+    background-position-x:-110px ;
+}
+/*进度条*/
+footer .bars .logo{
+    width: 35px;
+    height: 35px;
+    margin-top:10px;
+    margin-left: 15px;
+}
+footer .bars .logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+footer .ctrl-bars-box{
+    font-size: 8px;
+    color: #ffffff;
+    margin: 5px 15px;
+}
+footer .ctrl-bars-box p span{
+    margin: 0 5px;
+}
+footer .ctrl-bars-box .ctrl-bars{
+    width: 500px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: relative;
+    top: 13px;
+
+}
+footer .ctrl-bars-box .ctrl-bars .nobars{
+    width: 0px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #ff2f2f;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+footer  .ctrl-bars-box .ctrl-bars .ctrl-btn{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: -5px;
+    box-shadow: 0px 0px 0px ;
+    background-color: #7e5aff;
+}
+/*footer .ctrl-bars-box .ctrl-bars .ctrl-btn .ctrl-btn-small{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 5px;
+}*/
+footer .bars .tims{
+    color: #f2f2f2;
+    font-size: 12px;
+    margin: 7px;
+
+}
+/*音量模式*/
+footer .modes{
+    height: 52px;
+    display: flex;
+    align-items: center;
+}
+footer .modes .voice{
+    width: 25px;
+    height: 25px;
+    background: url("../img/1.png") 0px -242px;
+}
+footer .modes .voice:hover{
+    background-position-x: -29px;
+}
+footer .modes .mode{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    background: url("../img/1.png") 0px -338px;
+}
+footer .modes .mode:hover{
+    background-position-x:-30px ;
+}
+footer .modes .play-list{
+    width: 59px;
+    height: 36px;
+    text-align: center;
+    line-height: 15px;
+    color: white;
+    background: url("../img/1.png")-37px -62px;
+}
+footer .modes .play-list:hover{
+    background-position-y:-92px ;
+}
+/*播放列表盒子*/
+footer .play-list-box{
+    width: 50%;
+    height: 300px;
+    background-color: #483f46;
+    color: #ffffff;
+    position: absolute;
+    bottom: 46px;
+    left: 25%;
+    border-radius:6px;
+    font-size:12px;
+    opacity: 0.8;
+    overflow: scroll;
+    display: none;
+}
+
+footer .play-list-box .list-header{
+    width: 100%;
+    height: 20px;
+    font-size: 10px;
+    background: url("../img/1.png")0px -7px;
+    line-height: 20px;
+    text-indent: 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+footer .play-list-box ul{
+}
+footer .play-list-box ul li{
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+    cursor: pointer;
+
+}
+footer .play-list-box ul li span:nth-of-type(1){
+    float: left;
+}
+footer .play-list-box ul li span:nth-of-type(2){
+    float: right;
+    margin-right: 60px;
+}
+footer .play-list-box ul li i{
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: right;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    margin-right: 35px;
+}
+footer .play-list-box ul li:hover {
+    background-color: #b9933f;
+}
+footer .play-list-box ul li.active{
+    background-color: #1dd5ff;
+    color: #ffffff;
+}
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center center;
+    filter: blur(5px);
+}
+/*控制结束*/
+/*body{
+    padding: 50px 0;
+    background-position: center center;
+}*/
+/*背景*/
+/*html, body{
+    overflow: hidden;
+    background: #000;
+}
+
+#canvas{
+    cursor: crosshair;
+    z-index: 2;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+#overlay{
+    background: radial-gradient(ellipse at center, rgba(0,0,0,.0) 10%, rgba(0,0,0,.8) 80%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
+    z-index: 3;
+    position: absolute;
+    top:0;left:0;
+    height: 100%;
+    width: 100%;
+}
+
+#bg_glow{
+    z-index: 1;
+    position: absolute;
+    top:0;left:0;
+    height: 100%;
+    width: 100%;
+}
+
+
+#overlay:hover{
+    cursor: pointer;
+}
+
+#fps{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 5;
+}*/
+.info{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 14px;
+    border: white solid 1px;
+    background-color: #000;
+    color: white;
+    position: absolute;
+    bottom: 46px;
+    right: 398px;
+    opacity: 0.8;
+    z-index: 9999;
+    border-radius: 6px;
+    font-size: 13px;
+    display: none;
+}
